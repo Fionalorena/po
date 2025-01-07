@@ -1,0 +1,19 @@
+img{max-width: 100%;}
+
+body {background-color: #f8f8f0;}
+
+
+header{background-color: #f8f8f0;}
+header{border: 2px solid #C64132}
+
+footer{background-color: #f8f8f0;}
+footer{border: 2px solid #C64132}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+

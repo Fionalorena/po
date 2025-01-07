@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Playfair Display', serif; /* Serif font for headings */
+    color: #B30C2F; /* Text color */
+  }
+
+  .index_page {
+    background-color: #F5CCD2;
+}
+ /* header */
+
+ .header {
+    position: absolute; /* Position header on top of hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensures the header stays above the hero background */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; /* Optional: Make header background transparent */
+  }
+ 
+.logo img{
+    width: 70px;
+    position: fixed;
+}
+
+li {
+    list-style: none;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 15pt;
+    color: red;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  /* burger */
+
+  .fix_mellemrum {
+    display: flex;
+    gap: 50px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+  .hamburger {
+    position: fixed; /* Fixes it to the viewport */
+    top: 20px;       /* Distance from the top */
+    right: 20px;     /* Distance from the right */
+    z-index: 1000;   /* Ensures it's on top of other content */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+    
+    .line {
+      height: 2px;
+      width: 25px;
+      background-color: red;
+     
+    
+    }
+    
+    .menu {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+
+    right: 16px;
+    text-align: right;
+    transform: translateY(50%);
+    position: fixed;
+    z-index: 999;
+    }
+
+
+    .menu a {
+      font-family: 'Playfair Display', serif; /* Elegant font */
+      font-size: 1.5rem; /* Larger font size */
+      font-weight: bold; /* Bold text */
+      color: #000000; /* Deep red color */
+      text-decoration: none;
+      letter-spacing: 1px; /* Slight spacing between letters */
+      transition: color 0.3s ease, transform 0.3s ease;
+      border-radius: 0px; /* Rounded corners for a smooth look */
+
+
+  }
+  
+  .menu a:hover {
+      color: #E1253B; /* Brighter red on hover */
+      transform: scale(.99); /* Slight zoom effect */
+
+  }
+    
+    .hidden{
+      display: none;
+    }
+    
+
+    @media (width <600px) {
+
+        .menu {
+          font-family: "Inter";
+          display: flex;
+          justify-content: space-between;
+          line-height: 3em;
+        }
+        
+        .menu h1 {
+          font-size: 25pt;
+        }
+        
+        #logo img {
+          width: 70px;
+        margin-top: -10px;
+        margin-left: -10px;
+        } 
+    }        
+
+    @media (width <600px) {
+
+        .desktop {
+          display: none;
+        
+        }
+        }
+        
+        
+        @media (width >599px) {
+          .menu {
+        display: none;
+          }
+        
+          .hamburger {
+            display: none;
+          }
+        
+        }
+
+        
+        /* header slut */
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('../img/landing_foto.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-family: 'Rubik Mono One', sans-serif; /* Nabla font for title */
+    font-size: 5rem;
+    color: #D3273E; /* Red color matching your design */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Locations Section */
+  .locations {
+    background-color: #F6D4D3;
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+  
+  .location {
+    margin: 2rem auto;
+
+    padding: 1.5rem;
+    max-width: 600px; /* Set a max width for location boxes */
+  }
+  
+  .location-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #E1253B; /* Red button background */
+    text-decoration: none;
+    border-radius: 20px;
+
+  }
+  
+  .menu-button:hover {
+    background-color: #8C0823; /* Darker red on hover */
+    transition: background-color 0.3s ease;
+  }
+
+  .image-collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Full viewport height */
+  }
+  
+  .image-container {
+    position: relative;
+    width: 80%; /* Adjust container width */
+    max-width: 1200px; /* Limit maximum width */
+    height: 500px; /* Set a height for the collage */
+  }
+  
+  /* Images styling and positioning */
+  .image {
+    position: absolute;
+    width: 250px; /* Adjust size for each image */
+    object-fit: cover; /* Ensures images retain proportions */
+ 
+  }
+  
+  .img1 {
+    top: 10%;
+    left: -10%;
+    z-index: 2; /* Layer priority */
+  }
+  
+  .img2 {
+    top: 10%;
+    right: 15%;
+    z-index: 1;
+  }
+  
+  .img3 {
+    bottom: 5%;
+    right: 15%;
+    z-index: 3;
+  }
+  
+  .img4 {
+    bottom: 0;
+    left: 38%;
+    z-index: 2;
+  }
+
+  @media (width >599px) {
+
+    .image-collage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 110vh; /* Full viewport height */
+
+
+      }
+      
+      .image-container {
+        position: relative;
+        width: 100%; /* Adjust container width */
+        max-width: 1200px; /* Limit maximum width */
+
+      }
+      
+      /* Images styling and positioning */
+      .image {
+        position: absolute;
+        width: 250px; /* Adjust size for each image */
+        object-fit: cover; /* Ensures images retain proportions */
+     
+      }
+      
+      .img1 {
+        top: -23%;
+        left: 15%;
+        z-index: 4; /* Layer priority */
+        
+       
+      }
+      
+      .img2 {
+        top: -35%;
+        right: 30%;
+        z-index: 1;
+    
+
+      }
+      
+      .img3 {
+        bottom: 5%;
+        right: 8.9%;
+        z-index: 3;
+        
+        
+      }
+      
+      .img4 {
+        bottom: 0;
+        left: 30%;
+        z-index: 2;
+        aspect-ratio: 3/4;
+      }
+  }
+
+  footer {
+    background-color: #fff; 
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif;
+    border-top: 1px solid #ccc; 
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto; 
+    flex-wrap: wrap; 
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px; 
+    min-width: 200px; 
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+    color: black;
+    font-size: 14px;
+  }
+  
+  
+  .social-media {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 10px 0 10px;
+  }
+  
+  .social-media img {
+    width: 30px; 
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.1); 
+  }
+
+  @media (width >599px) {
+    footer {
+        background-color: #fff; 
+        padding: 40px 20px;
+        font-family: 'Inter', sans-serif;
+        border-top: 1px solid #ccc; 
+      }
+      
+      .footer-container {
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto; 
+        flex-wrap: wrap; 
+      }
+      
+      .footer-section {
+        flex: 1;
+        margin: 10px; 
+        min-width: 200px; 
+      }
+      
+      .footer-section h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: black;
+      }
+      
+      .footer-section p {
+        margin: 5px 0;
+        color: black;
+        font-size: 14px;
+      }
+      
+      
+      .social-media {
+        display: flex;
+        gap: 15px; 
+        align-items: center;
+        justify-content: flex-start;
+        margin: 20px 10px 0 10px;
+      }
+      
+      .social-media img {
+        width: 30px; 
+        height: 30px;
+        transition: transform 0.3s ease;
+      }
+      
+      .social-media img:hover {
+        transform: scale(1.1); 
+      }
+  }
+
+  .hide_bg {
+    mix-blend-mode: multiply;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    padding-right: 10%;
+    margin-bottom: 50px;
+  }
+
+  @media (width >599px) {
+    .hide_bg {
+        mix-blend-mode: multiply;
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        padding-right: 0%;
+      }
+  }
+
+
+  @media (width >599px) {
+  .locations {
+    display: flex; /* Makes the children (locations) display side by side */
+    justify-content: center; /* Centers them horizontally */
+    gap: 2rem; /* Adds spacing between the boxes */
+
+    padding: 2rem;
+  }
+  
+  .location {
+    border: none; /* Remove any default borders */
+    text-align: center;
+    background-color: #F6D4D3; /* Light pink background */
+    padding: 1.5rem;
+    width: 300px; /* Adjust the width of each box */
+  }
+  
+  .menu-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #E1253B; /* Red button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+
+  .menu-button1 {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #E1253B; /* Red button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transform: translateY(45px);
+  }
+  
+  .menu-button:hover {
+    background-color: #8C0823; /* Darker red on hover */
+    transition: background-color 0.3s ease;
+  }
+}
+
+
+
+
+.h2_location {
+    color: #E1253B;
+}

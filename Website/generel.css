@@ -1,0 +1,139 @@
+img{max-width: 100%;}
+
+body {background-color: #FFFEF1;}
+
+
+header{background-color: #FFE9E9;}
+header{border: 2px solid #C64132}
+
+footer{background-color: #FFE9E9;}
+footer{border: 2px solid #C64132}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+
+.breakfastbutton{background-color: #D5E7FD;}
+.breakfastbutton{border: 2px solid #C64132}
+.breakfastbutton{width: 360px;}
+breakfastbutton{height: 390px;}
+
+
+.lunchbutton{background-color: #FCEAD4;}
+.lunchbutton{border: 2px solid #C64132}
+.lunchbutton{width: 360px;}
+.lunchbutton{height: 390px;}
+
+.dinnerbutton{background-color: #501B11;}
+.dinnerbutton{border: 2px solid #C64132}
+.dinnerbutton{width: 360px;}
+.dinnerbutton{height: 390px;}
+
+.Kaf {width: 706;}
+.Kaf {height: 990;}
+.Kaf {background-color: #FCEAD4;}
+.Kaf {border: 2px solid #C64132}
+
+.detrenebrød {width: 706;}
+.detrenebrød {height: 990;}
+.detrenebrød {background-color: #FCEAD4;}
+.detrenebrød {border: 2px solid #C64132}
+
+.sidecar {width: 706;}
+.sidecar {height: 990;}
+.sidecar {background-color: #FCEAD4;}
+.sidecar {border: 2px solid #C64132}
+
+.flavourb {width: 706;}
+.flavourb {height: 990;}
+.flavourb {background-color: #FCEAD4;}
+.flavourb {border: 2px solid #C64132}
+
+.aogm {width: 706;}
+.aogm {height: 990;}
+.aogm {background-color: #FCEAD4;}
+.aogm {border: 2px solid #C64132}
+
+.riccos {width: 706;}
+.riccos {height: 990;}
+.riccos {background-color: #FCEAD4;}
+.riccos {border: 2px solid #C64132}
+
+.vitalfood {width: 706;}
+.vitalfood {height: 990;}
+.vitalfood {background-color: #F3C97D;}
+.vitalfood {border: 2px solid #C64132}
+
+.abricos {width: 706;}
+.abricos {height: 990;}
+.abricos {background-color: #F3C97D;}
+.abricos {border: 2px solid #C64132}
+
+.minas {width: 706;}
+.minas {height: 990;}
+.minas {background-color: #F3C97D;}
+.minas {border: 2px solid #C64132}
+
+.baka {width: 706;}
+.baka {height: 990;}
+.baka {background-color: #E5CAB9;}
+.baka {border: 2px solid #C64132}
+
+.hannoi {width: 706;}
+.hannoi {height: 990;}
+.hannoi {background-color: #E5CAB9;}
+.hannoi {border: 2px solid #C64132}
+
+.far {width: 706;}
+.far {height: 990;}
+.far {background-color: #E5CAB9;}
+.far {border: 2px solid #C64132}
+
+.edenj {width: 706;}
+.edenj {height: 990;}
+.edenj {background-color: #E5CAB9;}
+.edenj {border: 2px solid #C64132}
+
+.pow {width: 706;}
+.pow {height: 990;}
+.pow {background-color: #E5CAB9;}
+.pow {border: 2px solid #C64132}
+
+.barpasta {width: 706;}
+.barpasta {height: 990;}
+.barpasta {background-color: #E5CAB9;}
+.barpasta {border: 2px solid #C64132}
+
+.gaza {width: 706;}
+.gaza {height: 990;}
+.gaza {background-color: #E5CAB9;}
+.gaza {border: 2px solid #C64132}
+
+.mahalle {width: 706;}
+.mahalle {height: 990;}
+.mahalle {background-color: #E5CAB9;}
+.mahalle {border: 2px solid #C64132}
+
+.halifax {width: 706;}
+.halifax {height: 990;}
+.halifax {background-color: #E5CAB9;}
+.halifax {border: 2px solid #C64132}
+
+.ramen {width: 706;}
+.ramen {height: 990;}
+.ramen {background-color: #E5CAB9;}
+.ramen {border: 2px solid #C64132}
+
+.stefanos {width: 706;}
+.stefanos {height: 990;}
+.stefanos {background-color: #E5CAB9;}
+.stefanos {border: 2px solid #C64132}
+
+.mosob {width: 706;}
+.mosob {height: 990;}
+.mosob {background-color: #E5CAB9;}
+.mosob {border: 2px solid #C64132}

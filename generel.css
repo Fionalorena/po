@@ -1,0 +1,20 @@
+img{max-width: 100%;}
+
+body {background-color: #222222;}
+
+
+header{background-color: #222222;}
+
+
+footer{background-color: #222222;}
+footer{border: 2px solid #222222}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+
+

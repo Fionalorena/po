@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+  }
+
+  @font-face {
+    font-family: "Lustria";
+    src: url("../fonts/Lustria-Regular.ttf");
+  }
+
+  img {
+    width: 100%;
+  }
+
+
+body {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+
+
+
+  header {
+    margin-bottom: 75px; 
+  }
+  
+  main {
+    margin-top: 75px; 
+  }
+ 
+.logo img{
+    width: 70px;
+    position: fixed;
+}
+
+li {
+    list-style: none;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 15pt;
+    color: red;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .fix_mellemrum {
+    display: flex;
+    gap: 50px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    }
+    
+    .line {
+      height: 2px;
+      width: 25px;
+      background-color: red;
+     
+    
+    }
+    
+    .menu {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    position: absolute;
+    right: 16px;
+    text-align: right;
+    
+    }
+    
+    .hidden{
+      display: none;
+    }
+    
+
+    @media (width <600px) {
+
+        .menu {
+          font-family: "Inter";
+          display: flex;
+          justify-content: space-between;
+          line-height: 3em;
+        }
+        
+        .menu h1 {
+          font-size: 25pt;
+        }
+        
+        #logo img {
+          width: 70px;
+        margin-top: -10px;
+        margin-left: -10px;
+        } 
+    }        
+
+    @media (width <600px) {
+
+        .desktop {
+          display: none;
+        
+        }
+        }
+        
+        
+        @media (width >601px) {
+          .menu {
+        display: none;
+          }
+        
+          .hamburger {
+            display: none;
+          }
+        
+        }
+
+        
+      
+
+        .index_page {
+            background-color: #F6F6F6;
+        }
+
+  
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Lustria&display=swap');
+
+
+        
+h2 {
+  font-family: 'Lustria', serif;
+  color: red;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  color: red;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+
+.text-section {
+  flex: 1; 
+  max-width: 45%;
+  font-family: 'Inter', sans-serif;
+  color: red;
+}
+
+.text-section h2 {
+  font-family: 'Lustria', serif;
+  color: red;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text-section p {
+  line-height: 1.6;
+  color: red;
+}
+
+
+.image-section {
+  
+  position: relative;
+  flex: 1;
+  max-width: 45%;
+  height: auto;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; 
+  position: absolute; 
+}
+
+.image-section .top-image {
+  top: 0;
+  left: 20%;
+  width: 60%; 
+  z-index: 2; 
+}
+
+.image-section .bottom-image {
+  top: 80px; 
+  left: 0;
+  width: 50%; 
+  z-index: 1;
+}
+
+
+footer {
+  background-color: #fff; 
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+  border-top: 1px solid #ccc; 
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto; 
+  flex-wrap: wrap; 
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0px; 
+  min-width: 200px; 
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.footer-section p {
+  margin: 0px 0;
+  color: black;
+  font-size: 14px;
+}
+
+
+.social-media {
+  display: flex;
+  gap: 15px; 
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20px 10px 0 10px;
+}
+
+.social-media img {
+  width: 30px; 
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+  transform: scale(1.1); 
+}
+
+@media (width >599px) {
+  footer {
+      background-color: #fff; 
+      padding: 40px 20px;
+      font-family: 'Inter', sans-serif;
+      border-top: 1px solid #ccc; 
+    }
+    
+    .footer-container {
+      display: flex;
+      justify-content: space-between; 
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 0 auto; 
+      flex-wrap: wrap; 
+    }
+    
+    .footer-section {
+      flex: 1;
+      margin: 0px; 
+      min-width: 200px; 
+    }
+    
+    .footer-section h3 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 0px;
+      color: black;
+    }
+    
+    .footer-section p {
+      margin: 0px 0;
+      color: black;
+      font-size: 14px;
+    }
+    
+    
+    .social-media {
+      display: flex;
+      gap: 15px; 
+      align-items: center;
+      justify-content: flex-start;
+      margin: 20px 10px 0 10px;
+    }
+    
+    .social-media img {
+      width: 30px; 
+      height: 30px;
+      transition: transform 0.3s ease;
+    }
+    
+    .social-media img:hover {
+      transform: scale(1.1); 
+    }
+}
+
+
+
+
+.hamburger {
+  position: fixed; /* Fixes it to the viewport */
+  top: 20px;       /* Distance from the top */
+  right: 20px;     /* Distance from the right */
+  z-index: 1000;   /* Ensures it's on top of other content */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+  
+  .line {
+    height: 2px;
+    width: 25px;
+    background-color: red;
+   
+  
+  }
+  
+  .menu {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  right: 16px;
+  text-align: right;
+  transform: translateY(-30%);
+  position: fixed;
+  z-index: 999;
+  }
+
+  .menu a {
+      font-family: 'Playfair Display', serif; /* Elegant font */
+      font-size: 1.5rem; /* Larger font size */
+      font-weight: bold; /* Bold text */
+      color: #000000; /* Deep red color */
+      text-decoration: none;
+      letter-spacing: 1px; /* Slight spacing between letters */
+      transition: color 0.3s ease, transform 0.3s ease;
+      border-radius: 0px; /* Rounded corners for a smooth look */
+
+
+  }
+  
+  .menu a:hover {
+      color: #E1253B; /* Brighter red on hover */
+      transform: scale(.99); /* Slight zoom effect */
+
+  }
+  
+  
+  .hidden{
+    display: none;
+  }
+  
+
+  @media (width <600px) {
+
+      .menu {
+        font-family: "Inter";
+        display: flex;
+        justify-content: space-between;
+        line-height: 3em;
+      }
+      
+      .menu h1 {
+        font-size: 25pt;
+        position: absolute;
+      }
+      
+      #logo img {
+        width: 70px;
+      margin-top: -10px;
+      margin-left: -10px;
+      } 
+  }        
+
+  @media (width <600px) {
+
+      .desktop {
+        display: none;
+      
+      }
+      }
+      
+      
+      @media (width >599px) {
+        .menu {
+      display: none;
+        }
+      
+        .hamburger {
+          display: none;
+        }
+      
+      }
+
+      
+      /* header slut */

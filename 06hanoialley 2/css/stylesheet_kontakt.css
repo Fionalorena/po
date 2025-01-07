@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+  }
+
+  @font-face {
+    font-family: "Lustria";
+    src: url("../fonts/Lustria-Regular.ttf");
+  }
+
+  img {
+    width: 100%;
+  }
+
+
+
+  /* header */
+
+  .header {
+    padding: 10px;
+  }
+ 
+  
+.logo img{
+    width: 70px;
+    position: fixed;
+}
+
+li {
+    list-style: none;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 15pt;
+    color: red;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  /* burger */
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    }
+    
+    .line {
+      height: 2px;
+      width: 25px;
+      background-color: red;
+     
+    
+    }
+    
+    .menu {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    position: absolute;
+    right: 16px;
+    text-align: right;
+    
+    }
+    
+    .menu_items {
+      display: flex;
+      gap: 100px;
+    }
+    .hidden{
+      display: none;
+    }
+    
+
+    @media (width <600px) {
+
+        .menu {
+          font-family: "Inter";
+          display: flex;
+          justify-content: space-between;
+          line-height: 3em;
+        }
+        
+        .menu h1 {
+          font-size: 25pt;
+        }
+        
+        #logo img {
+          width: 70px;
+        margin-top: -10px;
+        margin-left: -10px;
+        } 
+    }        
+
+    @media (width <600px) {
+
+        .desktop {
+          display: none;
+        
+        }
+        }
+        
+        
+        @media (width >599px) {
+          .menu {
+        display: none;
+          }
+        
+          .hamburger {
+            display: none;
+          }
+        
+        }
+
+        
+        /* header slut */
+
+
+
+
+
+
+        /*  index */
+
+        .index_page {
+            background-color: #F5CCD2;
+        }
+
+    
+
+        .landing_foto {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Full width of the viewport */
+            height: 100vh; /* Full height of the viewport */
+            z-index: -1; /* Lower than the header */
+            overflow: hidden; /* Ensure no content overflows */
+        }
+        
+        .landing_foto img {
+            width: 100%; /* Scale image to fill width */
+            height: 100%; /* Scale image to fill height */
+            object-fit: cover; /* Ensure the image maintains aspect ratio and fills the area */
+        }
+
+        .landing_logotype {
+            width: 40%;
+            position: relative;
+           margin: auto;
+           top: 200px;
+        }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Forside</title>
+    <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="Favicon/Skærmbillede%202024-10-08%20kl.%2011.09.49.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="Favicon/Skærmbillede%202024-10-08%20kl.%2011.09.49.png" sizes="32x32" type="image/png">
+
+    <style>
+       * {
+          box-sizing: border-box;
+          max-width: 100%;
+        }
+
+        img, video {
+          max-width: 100%;
+          height: auto;
+        }
+
+        .container {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+
+        section img {
+            margin-bottom: 3px;
+        }
+
+        section p, section h3 {
+            margin-top: 5px;
+            margin-bottom: 100px;
+        }
+
+        /* Center the images within their container divs */
+        .image-container,
+        .breakfastbutton,
+        .lunchbutton,
+        .dinnerbutton {
+            text-align: center;
+        }
+
+        /* Ensure the images are block elements and centered */
+        .img,
+        .breakfastbutton img,
+        .lunchbutton img,
+        .dinnerbutton img {
+            display: block;
+            margin: 60px auto;
+        }
+        /* Apply the Anton font and add a tilt */
+       body {
+          font-family: 'Anton', sans-serif;
+       }
+        /* Double-layered text inside .image-container */
+        .image-container .text-overlay {
+            font-size: 90px; /* Adjust font size as needed */
+            color: #FF5744; /* Top layer text color */
+            text-shadow: 2px 2px 0px #C64132; /* Bottom layer color with slight offset */
+            font-family: 'Anton', sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="forside">
+
+    <header>
+        <a href="forside.html" id="logo-link-1">
+            <img src="Logo/Skærmbillede%202024-10-08%20kl.%2011.09.49.png" alt="logo" width="61" height="55">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="allrestaurants.html">All Restaurants</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <img src="Billeder%20-%20VC/Skærmbillede%202024-10-08%20kl.%2006.56.02.png" alt="Copenhagen by night" width="1160" height="447">
+            <div class="text-overlay">Vegan Copenhagen</div>
+        </div>
+
+        <div class="breakfastbutton">
+            <a href="breakfast.html" id="breakfastbutton">
+                <img src="Billeder%20-%20VC/Skærmbillede%202024-10-08%20kl.%2007.03.29.png" alt="Yougurt" width="267" height="200">
+                <h3>Breakfast</h3>
+            </a>
+        </div>
+    
+        <div class="lunchbutton">
+            <a href="lunch.html" id="lunchbutton">
+                <img src="Billeder%20-%20VC/Skærmbillede%202024-10-08%20kl.%2007.06.04.png" alt="Bagel" width="267" height="200">
+                <h3>Lunch</h3>
+            </a>
+        </div>
+    
+        <div class="dinnerbutton">
+            <a href="dinner.html" id="dinnerbutton">
+                <img src="Billeder%20-%20VC/Skærmbillede%202024-10-02%20kl.%2013.43.02.png" alt="Pasta" width="267" height="200">
+                <h3>Dinner</h3>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="breakfast.html">Breakfast</a></li>
+            <li><a href="lunch.html">Lunch</a></li>
+            <li><a href="dinner.html">Dinner</a></li>
+            <li><a href="allrestaurants.html">All Restaurants</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="info.html">Info</a></li>
+        </ul>
+        <a href="forside.html" id="logo-link-2">
+            <img src="Logo/Skærmbillede%202024-10-08%20kl.%2011.09.49.png" alt="logo" width="61" height="55">
+        </a>
+    </footer>
+</div>
+</body>
+</html>

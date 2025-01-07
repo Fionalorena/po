@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Japan</title>
+    <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" href="Favicon/Skærmbillede 2024-12-02 kl. 10.00.59.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="Favicon/Skærmbillede 2024-12-02 kl. 10.00.59.png" sizes="32x32" type="image/png">
+
+    <style>
+       * {
+          box-sizing: border-box;
+          max-width: 100%;
+        }
+
+        img, video {
+          max-width: 100%;
+          height: auto;
+        }
+
+        .container {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+
+        section img {
+            margin-bottom: 3px;
+        }
+
+        section p, section h3 {
+            margin-top: 5px;
+            margin-bottom: 100px;
+        }
+
+       body {
+        body {
+        font-family: 'Racing Sans One', sans-serif;
+    }
+
+    h1, h2 {
+        font-family: 'Racing Sans One', sans-serif;
+    }
+    h1 {
+        font-size: 60px; /* Make it larger */
+        font-weight: bold; /* Optional: make it bold */
+        line-height: 1.2; /* Adjust spacing between lines if needed */
+        margin-top: 20px; /* Adjust spacing above */
+        margin-bottom: 20px; /* Adjust spacing below */
+    }
+       }
+        /* Double-layered text inside .image-container */
+        .image-container .text-overlay {
+            font-size: 90px; /* Adjust font size as needed */
+            color: #FF5744; /* Top layer text color */
+            text-shadow: 2px 2px 0px #C64132; /* Bottom layer color with slight offset */
+            font-family: 'Anton', sans-serif;
+        }
+
+        #muteButton {
+        margin-top: 3px;
+        padding: 3px 5px;
+        font-size: 10px;
+        background-color: #C64132;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    #muteButton:hover {
+        background-color: #761e1e;}
+       
+    </style>
+</head>
+<body>
+    <div class="forside">
+
+    <header>
+        <a href="forside.html" id="logo-link-1">
+            <img src="Favicon/Skærmbillede 2024-12-02 kl. 10.00.59.png" alt="logo" width="31" height="31">
+        </a>
+        <h1>Japan</h1>
+        <h2>日本への情熱</h2>
+    </header>
+
+    <main>
+        <div class="video">
+            <video id="myVideo" src="https://fionalorena.dk/Portfolio/Video/Lea.mp4" width="1160" height="447" autoplay muted></video>
+            <button id="muteButton">Unmute</button>
+            
+            <script>
+                const video = document.getElementById("myVideo");
+                const muteButton = document.getElementById("muteButton");
+            
+                muteButton.addEventListener("click", () => {
+                    if (video.muted) {
+                        video.muted = false; // Unmute the video
+                        muteButton.textContent = "Mute"; // Update button text
+                    } else {
+                        video.muted = true; // Mute the video
+                        muteButton.textContent = "Unmute"; // Update button text
+                    }
+                });
+            </script>
+            
+        </div>
+
+        
+    </main>
+
+    <footer>
+       
+        <a href="forside.html" id="logo-link-2">
+            <img src="Favicon/Skærmbillede 2024-12-02 kl. 10.00.59.png" alt="logo" width="61" height="55">
+        </a>
+    </footer>
+</div>
+</body>
+</html> 

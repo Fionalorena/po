@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Forside</title>
+    <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="Favicon/Skærmbillede 2024-12-03 kl. 10.03.29.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="Favicon/Skærmbillede 2024-12-03 kl. 10.03.29.png" sizes="32x32" type="image/png">
+
+    
+    
+    <style>
+       * {
+          box-sizing: border-box;
+          max-width: 100%;
+        }
+
+        img, video {
+          max-width: 100%;
+          height: auto;
+        }
+
+        
+
+
+    .video .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 90px; /* Adjust font size as needed */
+        color: #EDEBDF; /* Text color */
+        text-shadow: 2px 2px 0px #271FCE; /* Adjust shadow color */
+        font-family: 'Monsieur La Doulaise', cursive;
+        text-align: center;
+        pointer-events: none; /* Prevent text from interfering with clicks on the video */
+    }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="forside">
+
+    <header>
+        <a href="forside.html" id="logo-link-1">
+            <img src="Favicon/Skærmbillede 2024-12-03 kl. 10.03.29.png" alt="logo" width="25" height="25">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="Japan/forside.html">JAPAN</a></li>
+                <li><a href="Website/forside.html">(VG)CPH</a></li>
+                <li><a href="Galleri.html">PHOTOS</a></li>
+                <li><a href="Spil/BRATGAME/spil.html">DRESS A BRAT</a></li>
+                <li><a href="06hanoialley 2/html/index.html">HANOI ALLEY</a></li>  
+                <li><a href="Aboutme.html">ABOUT ME</a></li>    
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="video">
+            <video id="myVideo" src="Video/Portfoliovideo.mp4" autoplay muted loop></video>
+            <div class="text-overlay">Fiona Lorena</div>
+         
+        </div>
+
+        <div class="section1">
+            <img src="Photos/section1.jpg" alt="">
+            <a href="Japan/forside.html" class="custom-button">
+                <img src="SVG/clickknap.svg" alt="Click Here Button">
+            </a>
+        </div>
+            
+        <div class="section2">
+            <img src="Photos/section2.jpg" alt="">
+            <a href="06hanoialley 2/html/index.html" class="custom-button">
+                <img src="SVG/clickknap.svg" alt="Click Here Button">
+            </a>
+        </div>
+
+        <div class="section3">
+            <img src="Photos/section3.jpg" alt="">
+            <a href="Website/forside.html" class="custom-button">
+                <img src="SVG/clickknap.svg" alt="Click Here Button">
+            </a>
+        </div>
+
+       <div class="section4">
+        <img src="Photos/section4.jpg" alt="">
+        <a href="Spil/BRATGAME/spil.html" class="custom-button">
+            <img src="SVG/clickknap.svg" alt="Click here button">
+        </a>
+       </div>
+
+       <div class="section5">
+        <div class="carousel">
+            <div class="carousel-container">
+                <img src="Photos/karusel1.jpg" alt="Photo 1">
+                <img src="Photos/karusel2.jpg" alt="Photo 2">
+                <img src="Photos/karusel3.jpg" alt="Photo 3">
+                <img src="Photos/karusel4.jpg" alt="Photo 4">
+                <img src="Photos/karusel5.JPG" alt="Photo 5">
+                <img src="Photos/karusel6.jpg" alt="Photo 6">
+                <img src="Photos/karusel7.jpg" alt="Photo 7">
+                <img src="Photos/karusel8.jpg" alt="Photo 8">
+                <img src="Photos/karusel9.JPG" alt="Photo 9">
+                <img src="Photos/karusel10.JPG" alt="Photo 10">
+
+                <a href="Galleri.html" class="custom-button">
+                    <img src="SVG/clickknap.svg" alt="Click Here Button">
+                </a>
+
+            </div>
+            <button class="carousel-btn prev-btn">&lt;</button>
+            <button class="carousel-btn next-btn">&gt;</button>
+        </div>
+    </div>
+    
+    <script>
+        const carouselContainer = document.querySelector('.carousel-container');
+        const images = document.querySelectorAll('.carousel-container img');
+        const prevButton = document.querySelector('.prev-btn');
+        const nextButton = document.querySelector('.next-btn');
+    
+        let currentIndex = 0;
+    
+        // Function to update the position of the carousel
+        function updateCarousel() {
+            const imageWidth = images[0].clientWidth;
+            carouselContainer.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+        }
+    
+        // Event listener for previous button
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            updateCarousel();
+        });
+    
+        // Event listener for next button
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+        });
+    
+        // Ensure the carousel resizes correctly when the window size changes
+        window.addEventListener('resize', updateCarousel);
+    </script>
+
+    <style>
+    .carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .carousel-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-container img {
+        min-width: 100%;
+        object-fit: cover;
+    }
+    
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    
+    .carousel-btn:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .prev-btn {
+        left: 10px;
+    }
+    
+    .next-btn {
+        right: 10px;
+    }
+    </style>
+    
+
+
+    </main>
+
+    <footer>
+       
+        <a href="forside.html" id="logo-link-2">
+            <img src="Favicon/Skærmbillede 2024-12-03 kl. 10.03.29.png" alt="logo" width="25" height="25">
+        </a>
+    </footer>
+</div>
+</body>
+</html>

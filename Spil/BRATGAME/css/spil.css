@@ -1,0 +1,293 @@
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: red;
+  overflow: hidden;
+}
+
+#game {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+
+#game_background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  background-image: url(../img/baggrund.svg);
+  background-size: cover;
+}
+#game_elements {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+/* Spilelementer og mellemgrund */
+/* Husk både container og sprite til de elementer du skal klikke på */
+/* CHANGES IN VERSION 5: add carljohan_container1 & 2 */
+#carljohan_container,
+#carljohan_container1,
+#carljohan_container2 {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 5/7;
+}
+
+#carljohan_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_r.svg);
+  background-size: cover;
+}
+/* ADDED IN VERSION 5:  */
+#carljohan_sprite1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_g.svg);
+  background-size: cover;
+}
+/* ADDED IN VERSION 5:  */
+#carljohan_sprite2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_b.svg);
+  background-size: cover;
+}
+
+/* CHANGES IN VERSION 2: delete left and top */
+/* CHANGES IN VERSION 5: add fluesvamp_container1 */
+#fluesvamp_container,
+#fluesvamp_container1 {
+  position: absolute;
+  width: 18%;
+  aspect-ratio: 7/8;
+}
+
+#fluesvamp_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fluesvamp_2.svg);
+  background-size: cover;
+}
+/* ADDED IN VERSION 5:  */
+#fluesvamp_sprite1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fluesvamp_1.svg);
+  background-size: cover;
+}
+
+#mellemgrund {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mellemgrund.svg);
+  background-size: cover;
+  pointer-events: none;
+}
+
+#game_foreground {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/forgrund.svg);
+  background-size: 100%;
+  pointer-events: none;
+}
+
+/* UI elementer */
+
+#game_ui {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#energy_board {
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  width: 36%;
+  aspect-ratio: 3/1;
+  background-image: url(../img/ui_life.svg);
+  background-size: cover;
+  /* Sæt containeren som container reference */
+  container-type: inline-size;
+}
+
+#time_board {
+  position: absolute;
+  top: 64%;
+  left: 1%;
+  width: 6%;
+  aspect-ratio: 100/160;
+  background-image: url(../img/ui_time.svg);
+  background-size: cover;
+}
+/* *** ADDED in version 3 *** */
+#time {
+  position: absolute;
+  top: 0;
+  left: 1%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/ui_time.svg);
+  background-size: cover;
+  filter: saturate(100) hue-rotate(0deg);
+}
+#score_board {
+  position: absolute;
+  top: 64.6%;
+  left: 7%;
+  width: 28%;
+  aspect-ratio: 8/3;
+  background-image: url(../img/ui_points.svg);
+  background-size: cover;
+  /* Sæt containeren som container reference */
+  container-type: inline-size;
+}
+/* DEPRECATED in version 2 */
+#score {
+  color: #fff;
+  /* Definer font-størrelsen udfra containeren */
+  font-size: 27cqw;
+  margin: 0;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+#energy {
+  color: #f00;
+  /* Definer font-størrelsen udfra containeren */
+  font-size: 20cqw;
+  margin: 0;
+  position: absolute;
+  left: 45%;
+  top: 25%;
+}
+
+/* *** ADDED in version 2 *** */
+/* Give alle liv en størrelse og et baggrunds-billede */
+#energy1,
+#energy2,
+#energy3 {
+  position: absolute;
+  width: 18cqw;
+  aspect-ratio: 1/1;
+  background-image: url(../img/heart-svgrepo-com.svg);
+  background-size: contain;
+  margin: 0;
+}
+
+/* *** ADDED in version 2 *** */
+/* Placer hjerterne på deres rigtige pladser */
+#energy1 {
+  left: 42.2%;
+  top: 30%;
+}
+#energy2 {
+  left: 57.4%;
+  top: 30%;
+}
+#energy3 {
+  left: 72.5%;
+  top: 30%;
+}
+
+/* Start- og slutskærme */
+/* Brug evt. inspektoren til at se dem ved at fjerne display:none */
+
+/* CHANGES IN VERSION 2: delete display:none */
+#start {
+  /* display: none; */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/start.svg);
+  background-size: cover;
+}
+/* CHANGES IN VERSION 2: delete display:none */
+#game_over {
+  /* display: none; */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/gameover.svg);
+  background-size: cover;
+}
+/* CHANGES IN VERSION 2: delete display:none */
+#level_complete {
+  /* display: none; */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/levelcomplete.svg);
+  background-size: cover;
+}
+
+/* *** ADDED in version 2 *** */
+.hide {
+  display: none;
+}
+/* Definer classes for alle startpositioner */
+.pos1 {
+  top: -25%;
+  left: 25%;
+}
+.pos2 {
+  top: -25%;
+  left: 35%;
+}
+.pos3 {
+  top: -25%;
+  left: 45%;
+}
+.pos4 {
+  top: -25%;
+  left: 55%;
+}
+
+/* *** ADDED in version 2 *** */
+#start_btn {
+  position: absolute;
+  width: 20%;
+  aspect-ratio: 1.7/1;
+  background-image: url(../img/play_btn.svg);
+  background-size: contain;
+  left: 40%;
+  top: 60%;
+}
+
+#mute {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+  left: 90%;
+  top: 82%;
+  background-color: #fff;
+  background-image: url(../img/mute.svg);
+  background-size: contain;
+}

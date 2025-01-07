@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kontakt</title>
+    <link rel="stylesheet" href="../css/stylesheet_kontakt.css" />
+    <link rel="stylesheet" href="../css/kontakt.css" />
+  </head>
+  <body class="kontakt_page">
+    <!-- burger menu -->
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="../img/logo_rigtig.png" alt="logo" />
+          </div>
+          <div class="fix_mellemrum">
+            <a href="menu1.html" class="desktop">MENU </a>
+  
+            <a href="kontakt.html" class="desktop">KONTAKT</a>
+  
+            <a href="omos.html" class="desktop">OM OS</a>
+          </div>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+  
+        <div class="menu-wrapper hidden">
+          <div class="menu">
+            <a href="menu1.html">MENU</a>
+  
+            <a href="kontakt.html">KONTAKT</a>
+  
+            <a href="omos.html">OM OS</a>
+          </div>
+        </div>
+    </header>
+
+    <!-- burger menu -->
+
+    <main>
+      <h1>KONTAKT OS</h1>
+      <br />
+
+      <div class="lokationer_kontakt">
+        <h2>
+          NØRREBROGADE 63, <br />
+          2200 København N <br />
+          <br />
+          +45 93 88 98 89
+        </h2>
+
+        <h2>
+          STORE KONGENSGADE 24, <br />
+          1264 København K <br />
+          <br />
+          +45 51 28 99 99
+        </h2>
+      </div>
+      <br />
+
+      <!-- 
+<div class="btn_email">
+      <a href="mailto:Info@hanoialleycph.dk">Send email &rarr;</a>
+    </div> -->
+
+      <form>
+        <label for="full-name">Fulde navn <br /></label>
+        <input id="full-name" name="fname" type="text" /> <br /><br />
+        <label for="email">E-mail <br /></label>
+        <input id="email" name="email" type="email" />
+        <br /><br />
+
+        <div class="form-felt">
+          <label>
+            Besked <br />
+            <textarea name="besked" rows="5"></textarea>
+          </label>
+        </div>
+
+        <button>SEND</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>ÅBNINGSTIDER:</h3>
+          <p>Man-tor: 12:00 - 23:00</p>
+          <p>Tor-søn: 12:00 - 24:00</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>TELEFON:</h3>
+          <p>
+            Nørrebro:<br />
+            +45 93 889 889
+          </p>
+          <p>
+            Store Kongensgade:<br />
+            +45 51 289 999
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>LOKATIONER:</h3>
+          <p>
+            Nørrebrogade 63,<br />
+            2200 København N
+          </p>
+          <p>
+            Store Kongensgade 24,<br />
+            1264 København K
+          </p>
+        </div>
+
+        <div class="social-media">
+          <a href="https://www.facebook.com/Hanoialleycph/" target="_blank" aria-label="Facebook">
+            <img src="../img/icon/ionicons/logos/logo-facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com/hanoialleycph/?hl=da" target="_blank" aria-label="Instagram">
+            <img src="../img/icon/ionicons/logos/logo-instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // disse const betyder jeg skaber/definerer en variabel jeg så kan putte funktioner på
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector(".menu-wrapper");
+
+      // sådan her er en anden måde at gøre det på
+
+      // hamburger.addEventListener("click", () => {
+      //   menu.classList.toggle("hidden");
+      // });
+
+      // man tager fat i hamburger, siger når eventet klik sker. så kommeer funktionen toggleClass på.
+      hamburger.addEventListener("click", toggleClass);
+
+      // vi definerer hvad funktionen toggle class gør. Vi tager fat i menu og så tagr vi fat i menus classes. Herefter kan vi så tlføje classen toggle. Som gør at hidden bliver slået til.
+      function toggleClass() {
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>

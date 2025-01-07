@@ -1,0 +1,294 @@
+@media (width > 800px){
+
+    * {
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto; 
+    }
+    
+    .container {
+      max-width: 100%;
+      margin: 0 auto; 
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .element {
+      width: 100%; 
+    }
+    
+    div, section, article, aside, header, footer, main, img, video, iframe {
+      max-width: 100%;
+    }  }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+
+    
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .image-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #C64132;
+        font-size: 5rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px #fcffd8(0, 0, 0, 0.7);
+        text-align: center;
+    width: 100%; 
+    }
+
+    #logo {
+        background-image: url('Logo/Skærmbillede\ 2024-10-08\ kl.\ 11.09.49.png');
+        width: 150px; /* adjust as necessary */
+        height: 50px; /* adjust as necessary */
+        display: block; /* or inline-block */
+    }
+    
+    
+    
+    h1{
+        color: #C64132 ;
+    }
+
+    h3 {
+        color: #C64132; /* Change this to any color you want */
+    }
+
+    p {
+        color: #C64132;
+    }
+
+    li {
+        color: #C64132 ;
+    }
+
+    /* Ensures all sections have the specified dimensions and are centered */
+/* Ensures all sections have the specified dimensions, are centered, and have space between them */
+section {
+    width: 706px;
+    height: 990px;
+    margin: 0 auto 95px auto; /* Adds 40px space between sections */
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    background-color: #f9f9f9; /* Optional: Adds a background color */
+    border: 1px solid #ccc; /* Optional: Adds a border for visibility */
+}
+
+/* Ensure only images inside section elements have specified size */
+
+/* Apply to images inside sections but exclude those from the "Ikoner" folder and logos */
+section img {
+    width: 615px;
+    height: 330px;
+  }
+  
+  /* Exclude images from the "Ikoner" folder */
+  section img[src*="Ikoner"] {
+    width: 35px;
+    height: 35px;
+  }
+  
+  /* Exclude logo images */
+  img[src*="Logo"] {
+    width: none;
+    height: none;
+  }
+  
+
+
+  /* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* or any other font */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all children horizontally */
+}
+
+header, main, footer {
+    text-align: center; /* Center text in header, main, and footer */
+    width: 100%; /* Ensure full width */
+}
+
+/* Center images */
+.image-container {
+    position: relative;
+    width: 100%; /* Make it full width */
+}
+
+.image-container img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image */
+}
+
+.image-container img {
+    width: 1150px;
+    height: 435px;
+    opacity: 0.7; /* Faded look */
+    border: 2px solid #C64132; /* Red border */
+}
+
+
+/* Center button images and texts */
+.breakfastbutton, .lunchbutton, .dinnerbutton {
+    margin: 20px; /* Space between buttons */
+    display: inline-block; /* Allow buttons to be inline-block elements */
+}
+
+.breakfastbutton img, .lunchbutton img, .dinnerbutton img {
+    display: block; /* Make the images block elements */
+    margin: 0 auto; /* Center the images */
+}
+
+/* Add styles for the footer */
+footer ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox to center the list */
+    justify-content: center; /* Center items horizontally */
+}
+
+footer ul li {
+    margin: 0 15px; /* Space between items */
+}
+
+.breakfastbutton {
+    
+    width: 360px;
+    height: 390px;
+   
+}
+
+.lunchbutton {
+    width: 360px;
+    height: 390px;
+   
+}
+
+.dinnerbutton {
+     width: 360px;
+    height: 390px;
+}
+
+/* Ensures all images inside these button divs have width 267px and height 200px */
+.breakfastbutton img,
+.lunchbutton img,
+.dinnerbutton img {
+    width: 267px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image fits nicely within the dimensions */
+}
+
+/* Apply a red border to all images */
+img {
+    border: 2px solid #C64132;
+}
+/* Exclude specific images like icons or logos using their class or ID */
+img[src*="Ikoner/"], img[src*="Logo/"] {
+    border: none;
+}
+
+/* Exclude logo images in the header and footer from having a red border */
+header img, footer img {
+    border: none;
+}
+/* Make all text in the body red */
+body {
+    color: #C64132;
+}
+
+/* Optional: If you want to exclude specific elements from being red, you can add more specific rules. For example: */
+nav a {
+    color:  #C64132; /* Restores the default color for nav links */
+}
+
+/* Or exclude specific classes or elements from being red */
+footer a {
+    color: #C64132; /* This can reset the color to the default or another value */
+}
+/* Center the images within their container divs */
+.image-container,
+.breakfastbutton,
+.lunchbutton,
+.dinnerbutton {
+    text-align: center; /* Center content horizontally */
+}
+
+/* Ensure the images are block elements and centered */
+.image-container img,
+.breakfastbutton img,
+.lunchbutton img,
+.dinnerbutton img {
+    display: block; /* Makes the image a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+.forside {
+    background-color: #FFFEF1;
+}
+
+.breakfast {
+    background-color: #D5E7FD;
+}
+
+.lunch {
+    background-color: #F08A5C;
+}
+
+.dinner {
+    background-color: #5F352D;
+}
+
+.allrestaurants {
+    background-color: #DB6048;
+}
+
+.aboutus {
+    background-color: #FCEAD4;
+}
+
+body {
+    font-style: italic;
+
+   
+}
+body.aboutus section {
+    background-color: #F6F4D8; /* Set background color */
+    padding: 20px; /* Add some padding for better appearance */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    border: 2px solid #C64132; /* Add a red border with thickness of 3px */
+}
+
+
+
+
+
+

@@ -1,0 +1,412 @@
+@media (max-width: 800px) {
+    .video {
+        height: 40vh; /* Smaller height for smaller screens */
+    }
+
+}
+
+@media (max-width: 800px) {
+    .video {
+        transform: translateX(0); /* Center it again for smaller screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .video {
+        margin-top: 50px; /* Less space on smaller screens */
+    }
+}
+
+@media (max-width: 800px) {
+    header #logo-link-1 {
+        margin-right: 10px; /* Less space on smaller screens */
+    }
+}
+
+
+    * {
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto; 
+    }
+    
+    .container {
+      max-width: 100%;
+      margin: 0 auto; 
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .element {
+      width: 100%; 
+    }
+    
+    div, section, article, aside, header, footer, main, img, video, iframe {
+      max-width: 100%;
+    }  
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+
+    
+    
+    h1{
+        color: #271FCE ;
+    }
+
+    h3 {
+        color: #271FCE; /* Change this to any color you want */
+    }
+
+    p {
+        color: #271FCE;
+    }
+
+    li {
+        color: #EDEBDF ;
+    }
+
+    header {
+        padding-top: 25px; /* Adjust the value to create space at the top of the header */
+    
+    }
+
+    header nav {
+        margin-top: 45px; /* Adjust the value to create space between logo and navigation */
+    }
+
+    header nav a {
+        text-decoration: none; /* Removes underline from navigation links */
+    }
+
+    header a {
+        text-decoration: none; 
+        color: #EDEBDF; 
+    }
+
+    header {
+        font-family: Arial, sans-serif; /* Keep the same font */
+        font-style: normal; /* Ensure the text is not italic (cursive) */
+        text-align: center; /* Optional: Center align the header text */
+        padding-bottom: 10px; /* Adjust space below the header */
+    }
+    
+    header a:hover {
+        color: #271FCE; 
+    }
+
+    
+    
+
+    main {
+        padding-top: 0px; 
+    }
+
+    main > div:not(.video) {
+        border-bottom: 1px solid #EDEBDF; /* Thin line with specified color */
+        margin: 0 auto; /* Center the divs */
+        width: 90%; /* Adjust as needed to control width */
+    }
+    
+    main > div:not(.video):last-child {
+        border-bottom: none; /* Remove border from the last section */
+    }
+
+    
+    
+    #logo {
+        background-image: url('Logo/Skærmbillede\ 2024-10-08\ kl.\ 11.09.49.png');
+        width: 150px;
+        height: 50px;
+        display: block;
+        z-index: -1; 
+    }
+    
+ 
+section img {
+    width: 615px;
+    height: 330px;
+  }
+  
+ 
+  section img[src*="Ikoner"] {
+    width: 35px;
+    height: 35px;
+  }
+  
+ 
+  img[src*="Logo"] {
+    width: none;
+    height: none;
+  }
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* or any other font */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all children horizontally */
+}
+
+header, main, footer {
+    text-align: center; /* Center text in header, main, and footer */
+    width: 100%; /* Ensure full width */
+}
+
+
+.video {
+    position: relative; /* Change from absolute to relative */
+    margin: 0 auto; /* Center it horizontally */
+    width: 95vw;
+    height: 86vh;
+    overflow: hidden;
+    margin-top: 45px; /* Adjust this for spacing */
+    z-index: 0; /* Ensure it does not overlap the footer */
+}
+
+.video video {
+    width: 100%; /* Make the video span full width */
+    height: 100%; /* Fill the container's height */
+    object-fit: cover; /* Crop the video to fill the container */
+    display: block; /* Remove any inline spacing issues */
+}
+
+
+.section1 {
+    position: relative; /* Ensure position is relative to position child elements */
+}
+
+.section1 .custom-button {
+    position: absolute;
+    top: 60%; /* Adjust position vertically */
+    left: 77%; /* Adjust position horizontally */
+    transform: translate(-50%, -50%); /* Center the button */
+    text-decoration: none; /* Remove link underline */
+}
+
+.section1 .custom-button img {
+    display: block;
+    width: 70px;
+    height: auto;
+    max-width: 200px; /* Adjust size as needed */
+}
+
+.section2 {
+    position: relative; /* Ensure position is relative to position child elements */
+}
+
+.section2 .custom-button {
+    position: absolute;
+    top: 61%; /* Adjust vertically */
+    left: 24%; /* Move more to the right */
+    transform: translate(-50%, -50%); /* Center based on adjusted position */
+    text-decoration: none; /* Remove link underline */
+}
+
+.section2 .custom-button img {
+    display: block;
+    width: 70px; /* Make the button smaller */
+    height: auto;
+}
+
+.section3 {
+    position: relative; /* Ensure position is relative for child positioning */
+}
+
+.section3 .custom-button {
+    position: absolute;
+    top: 56%; /* Adjust vertically */
+    left: 78%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the button relative to its position */
+    text-decoration: none; /* Remove link underline */
+}
+
+.section3 .custom-button img {
+    display: block;
+    width: 70px; /* Adjust size of the button */
+    height: auto;
+}
+
+.section4 {
+    position: relative; /* Ensure position is relative to position child elements */
+}
+
+.section4 .custom-button {
+    position: absolute;
+    top: 58%; /* Adjust vertically */
+    left: 23%; /* Move more to the right */
+    transform: translate(-50%, -50%); /* Center based on adjusted position */
+    text-decoration: none; /* Remove link underline */
+}
+
+.section4 .custom-button img {
+    display: block;
+    width: 70px; /* Make the button smaller */
+    height: auto;
+}
+
+.section5 {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the parent container has height for vertical centering */
+}
+
+.section5 .carousel {
+    width: 30%; /* Reduce the width to half */
+    height: 50%; /* Reduce the height to half */
+    margin: 5%; /* Center the carousel horizontally */
+    overflow: hidden; /* Ensure no overflow issues */
+}
+
+.carousel-container img {
+    width: auto; /* Maintain natural width */
+    height: 50%; /* Fit the height of the carousel */
+    object-fit: contain; /* Ensure the aspect ratio is preserved */
+    display: block; /* Remove inline spacing issues */
+    margin: auto; /* Center the images if there is extra space */
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 5px; /* Adjust the gap size to create space between the photos */
+    padding: 5px; /* Optional: Add padding inside the container */
+}
+
+.carousel-container img {
+    margin-right: 5px; /* Space between images */
+}
+
+.carousel-container img:last-child {
+    margin-right: 0; /* Remove margin from the last image */
+}
+
+.section5 {
+    position: relative; /* Ensure position is relative for child positioning */
+}
+
+.section5 .custom-button {
+    position: absolute;
+    top: 90%; /* Adjust vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the button relative to its position */
+    text-decoration: none; /* Remove link underline */
+}
+
+.section5 .custom-button img {
+    display: block;
+    width: 70px; /* Adjust size of the button */
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .fiona {
+    text-align: center;  /* Ensures the content is centered */
+  }
+  
+  .fiona img {
+    width: 25%;  /* Reduce the image to half of its current size */
+    height: auto;  /* Maintain aspect ratio */
+    margin-bottom: 50px;  /* Add space between the image and the h1 text */
+    margin-top: 50px;
+  }
+
+
+footer {
+    position: relative; /* Fixed positioning ensures it's always at the bottom of the screen */
+    bottom: 0; /* Position it at the bottom */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Adjust for proper centering */
+    z-index: 2; /* Ensure footer is above other content but below the video */
+    width: 100%; /* Full width */
+    text-align: center; /* Center the content */
+    padding: 20px 0; /* Add some padding to space it out */
+    background-color: #222222; /* Optional: set a background color */
+}
+
+footer a img {
+    width: 25px; /* Adjust size of logo */
+    height: auto;
+}
+
+/* Add styles for the footer */
+footer ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox to center the list */
+    justify-content: center; /* Center items horizontally */
+}
+
+footer ul li {
+    margin: 0 15px; /* Space between items */
+}
+
+
+/* Apply a red border to all images *
+/* Exclude specific images like icons or logos using their class or ID */
+img[src*="Ikoner/"], img[src*="Logo/"] {
+    border: none;
+}
+
+/* Exclude logo images in the header and footer from having a red border */
+header img, footer img {
+    border: none;
+}
+/* Make all text in the body red */
+body {
+    color: #222222;
+}
+
+/* Optional: If you want to exclude specific elements from being red, you can add more specific rules. For example: */
+nav a {
+    color:  #EDEBDF; /* Restores the default color for nav links */
+}
+
+/* Or exclude specific classes or elements from being red */
+footer a {
+    color: #EDEBDF; /* This can reset the color to the default or another value */
+}
+
+.forside {
+    background-color: #222222;
+}
+
+body {
+    font-style: italic;
+
+   
+}
+
+
+
+
+
+
+

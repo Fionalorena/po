@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRATGAME</title>
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/spil.css" />
+    <link rel="stylesheet" href="css/animationer.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="spil.html">Spil</a>
+        <a href="assets.html">Assets</a>
+        <a href="grafik.html">Grafik</a>
+        <a href="teknik.html">Teknik</a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="screen">
+        <div id="game">
+          <div id="game_background"></div>
+          <div id="game_elements">
+            <!-- Her skal spil-elementerne ligge -->
+
+            <!-- **** Added in version 4**** -->
+            <div id="mute"></div>
+
+            <div id="carljohan_container">
+              <div id="carljohan_sprite"></div>
+            </div>
+            <div id="carljohan_container1">
+              <div id="carljohan_sprite1"></div>
+            </div>
+            <div id="carljohan_container2">
+              <div id="carljohan_sprite2"></div>
+            </div>
+         
+
+            <div id="fluesvamp_container">
+              <div id="fluesvamp_sprite"></div>
+            </div>
+            <div id="fluesvamp_container1">
+              <div id="fluesvamp_sprite1"></div>
+            </div>
+
+            <!-- Her skal mellemgrunden ligge -->
+            <div id="mellemgrund"></div>
+          </div>
+          <div id="game_foreground"></div>
+          <div id="game_ui">
+            <!-- Her skal ui-elementerne ligge -->
+            <div id="score_board">
+              <p id="score"></p>
+            </div>
+            <div id="energy_board">
+              <!-- **** Added in version 2 **** -->
+              <p id="energy1"></p>
+              <p id="energy2"></p>
+              <p id="energy3"></p>
+            </div>
+            <div id="time_board">
+              <div id="time"></div>
+            </div>
+          </div>
+        </div>
+        <div id="start" class="hide">
+          <!-- **** Added in version 2 **** -->
+          <div id="start_btn"></div>
+        </div>
+        <div id="game_over" class="hide"></div>
+        <div id="level_complete" class="hide"></div>
+        <!-- **** Added in version 4 **** -->
+        <audio src="sounds/cough.mp3" id="snd1"></audio>
+        <audio src="sounds/yeah.mp3" id="snd2"></audio>
+        <audio src="sounds/death.mp3" id="snd3"></audio>
+        <audio src="sounds/nam.mp3" id="snd4"></audio>
+        <audio src="sounds/birds.mp3" id="snd5"></audio>
+      </div>
+    </main>
+
+    <footer>Marie og Karins spil...</footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

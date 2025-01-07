@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+  }
+
+  @font-face {
+    font-family: "Lustria";
+    src: url("../fonts/Lustria-Regular.ttf");
+  }
+
+  img {
+    width: 100%;
+  }
+
+
+body {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #F6F6F6;
+    color: #E1253B;
+    font-family: "Lustria";
+    font-weight: 100;
+  }
+
+h1 {
+  padding-top: 20%;
+  padding-bottom: 10%;
+}
+.lokation_info {
+padding-top: 10%;
+padding-right: 35%;
+padding-bottom: 30%;
+}
+
+.lokationer_index {
+  background-color: #E1253B;
+  color: #F6F6F6;
+  font-family: "Inter";
+  font-weight: 100;
+  font-size: 10pt;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  display: inline-block;
+  
+}
+
+.galleri {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px auto;
+}
+
+.menu-billede {
+  width: 300px; 
+  height: auto;
+}
+
+.menu-tekst {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  max-width: 300px;
+  font-family: "Lustria"; 
+  font-size: 15pt;
+  font-weight: 100;
+  color: #E1253B;
+  padding-bottom: 150px;
+}
+
+  .header {
+    padding: 10px;
+  }
+ 
+.logo img{
+    width: 70px;
+}
+
+li {
+    list-style: none;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 15pt;
+    color: red;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    }
+    
+    .line {
+      height: 2px;
+      width: 25px;
+      background-color: red;
+    
+    }
+    
+    .menu {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    position: absolute;
+    right: 16px;
+    text-align: right;
+    
+    }
+    
+    .hidden{
+      display: none;
+    }
+    
+
+
+
+#galleri-norrebrogade {
+  display: grid;
+  grid-template-columns: 1fr; /* Default: 1 column */
+  gap: 20px; /* Space between items */
+  margin: 20px auto; /* Center the grid on the page */
+  max-width: 1200px; /* Limit max width for large screens */
+}
+
+.menu-billede img {
+  width: 100%; /* Ensure images take full width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+.menu-tekst {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lustria", serif;
+  font-weight: 100;
+  color: #E1253B;
+  margin-top: 10px; /* Space above text */
+}

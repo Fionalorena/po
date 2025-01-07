@@ -1,0 +1,71 @@
+/************* ANIMATIONER *************/
+
+/* hoppe animation */
+.hop {
+  animation: hop 2s infinite alternate;
+}
+
+@keyframes hop {
+  from {
+    scale: 0 0;
+  }
+  to {
+    scale: 1 1;
+  }
+}
+
+/* falde animation */
+.fald {
+  animation-name: fald;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes fald {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 0 400%;
+  }
+}
+
+/* forsvind animation */
+.forsvind {
+  animation: forsvind 2s 1;
+}
+
+@keyframes forsvind {
+  from {
+    opacity: 1;
+    rotate: 0deg;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    rotate: 720deg;
+    scale: 0;
+  }
+}
+
+/************* ANDRE CLASSER *************/
+
+.frys {
+  animation-play-state: paused;
+}
+
+/* *** ADDED in version 3 *** */
+.time-goes {
+  animation: time-goes 30s linear both;
+}
+
+/* *** ADDED in version 3 *** */
+@keyframes time-goes {
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(100% 0 0 0);
+  }
+}
